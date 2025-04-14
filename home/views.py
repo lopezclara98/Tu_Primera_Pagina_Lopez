@@ -23,7 +23,6 @@ def crear_vela(request):
 
     return render(request, 'home/crear_vela.html', {'formulario': formulario})
 
-
 def listado_de_velas(request):
     velas = Vela.objects.all()  # Obtener todas las velas de la base de datos
     return render(request, 'home/listado_de_velas.html', {'velas': velas})  # Pasar las velas al template   
